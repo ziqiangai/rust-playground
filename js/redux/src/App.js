@@ -9,14 +9,15 @@ import {
   logOut,
 } from "./actions";
 
-function App() {
+function App({ title }) {
   const counter = useSelector((state) => state.counter);
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
+
   return (
       <div className="App">
         <h1>
-          Hello World <br /> A little Redux Project. YaaY!
+            {title}
         </h1>
         <h3>Counter</h3>
         <h3>{counter}</h3>

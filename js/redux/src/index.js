@@ -16,7 +16,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            <App />
+            <App title={'组件1'} />
+            <App title={'组件2'}/>
         </Provider>
     </React.StrictMode>,
 );
